@@ -1,0 +1,13 @@
+.avatar{
+    max-height: 100px;
+}
+
+#search-results{
+    max-width: 800px;
+    border-bottom: 10px;
+}
+
+.viewProfile{
+    text-decoration: none;
+    color: #fff;
+}

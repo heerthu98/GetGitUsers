@@ -1,56 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GitHub User Search</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <a href="#" style="text-decoration: none; color: black">
-            <h2>GitHub User Search</h2>
-          </a>
-          <input
-            id="search-query"
-            class="form-control"
-            type="text"
-            placeholder="Enter a search query"
-            autocomplete="off"
-          />
-          <button id="search-btn" type="button" class="btn btn-primary mt-2">
-            Search
-          </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub User Search</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <a href="#" style="text-decoration: none; color: black; text-align: center;">
+        <h2>GitHub User Search</h2>
+      </a>
+      <nav class="navbar">
+        <div class="container-fluid justify-content-center">
+          <form class="d-flex" role="search">
+            <input id="search-query" class="form-control me-2" type="text" placeholder="Enter User Name"
+              autocomplete="off" />
+            <button id="search-btn" type="button" class="btn btn-primary">Search</button>
+          </form>
         </div>
-      </div>
+      </nav>
     </div>
+  </div>
 
-    <div class="container mt-4">
-      <table id="search-results" class="table">
-        <thead>
-          <tr>
-            <th>Avatar</th>
-            <th>Username</th>
-            <th>Profile URL</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
+  <div id="search-results" class="px-5 container"> </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"></script>
-    <script src="script.js">
-      
-    </script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
